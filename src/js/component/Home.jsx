@@ -3,24 +3,18 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Card } from "./Card";
-
+import {Navbar} from "./Navbar.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="text-center">
+    	<Navbar/>
 			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
+		  <Card/>
 			<Card/>
 			<Card/>
 			<Card/>
-			<Card/>
-			
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
 		</div>
 	);
 };
