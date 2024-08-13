@@ -1,10 +1,8 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 import { Card } from "./Card.jsx";
-import {Navbar} from "./Navbar.jsx";
+import { Navbar } from "./Navbar.jsx";
 import { Jumbotron } from "./Jumbotron.jsx";
+import { Footer } from "./Footer.jsx";
 
 //create your first component
 const Home = () => {
@@ -30,20 +28,21 @@ const Home = () => {
 			description: "React es una biblioteca de JavaScript para construir interfaces de usuario, mantenida por Facebook y una comunidad de desarrolladores."
 		}
 	];
-	
-	
+
+
 	return (
 		<div className="">
-    	<Navbar/>
-		<div className="container">
+			<Navbar />
+			<div className="container">
 
-			<Jumbotron/> 
-			<div className="navbar">
-		    {languages.map(item=><Card language={item}/>)}
-			
+				<Jumbotron />
+				<div className="navbar">
+					{languages.map(item => <Card language={item} />)}
+
+				</div>
+
 			</div>
-
-		</div>
+			<Footer />
 		</div>
 	);
 };
